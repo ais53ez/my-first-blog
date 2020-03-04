@@ -1,4 +1,11 @@
 <html>
 <body>
     <p>Hi there!</p>
+    <div>
+        {% for p in posts %}
+            <p>{{p.title}}</p>
+            <p>{{p.published_date}} {{p.created}}</p>
+            <p>{{p.text}}</p>
+        {% endfor %}
+    </div>
 </html>
